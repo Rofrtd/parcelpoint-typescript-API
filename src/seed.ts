@@ -1,10 +1,10 @@
 import "reflect-metadata";
 import { createConnection } from "typeorm";
-import { User } from "./entity/User";
-import { Retailer } from "./entity/Retailer";
-import { Agent } from "./entity/Agent";
-import { Carrier } from "./entity/Carrier";
-import { Parcel } from "./entity/Parcel";
+import { User } from "./entities/User";
+import { Retailer } from "./entities/Retailer";
+import { Agent } from "./entities/Agent";
+import { Carrier } from "./entities/Carrier";
+import { Parcel } from "./entities/Parcel";
 
 createConnection().then(async connection => {
     const userRepository = connection.getRepository(User);

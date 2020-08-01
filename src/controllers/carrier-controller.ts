@@ -1,6 +1,6 @@
 import * as fastify from 'fastify'
 import { getRepository } from "typeorm";
-import { Carrier } from '../entity/Carrier';
+import { Carrier } from '../entities/Carrier';
 
 export function carrierController(server: fastify.FastifyInstance, opts: any, done: any) {
     const carrierRepository = getRepository(Carrier)

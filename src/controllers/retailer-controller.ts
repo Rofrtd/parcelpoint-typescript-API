@@ -1,6 +1,6 @@
 import * as fastify from 'fastify'
 import { getRepository } from "typeorm";
-import { Retailer } from '../entity/Retailer';
+import { Retailer } from '../entities/Retailer';
 
 export function retailerController(server: fastify.FastifyInstance, opts: any, done: any) {
     const retailerRepository = getRepository(Retailer)

@@ -1,8 +1,8 @@
 import * as fastify from 'fastify'
 import { getRepository } from "typeorm";
-import { User } from "../entity/User";
-import { Parcel } from "../entity/Parcel"
-import { Retailer } from '../entity/Retailer';
+import { User } from "../entities/User";
+import { Parcel } from "../entities/Parcel"
+import { Retailer } from '../entities/Retailer';
 
 export function parcelController(server: fastify.FastifyInstance, opts: any, done: any) {
     const userRepository = getRepository(User)
